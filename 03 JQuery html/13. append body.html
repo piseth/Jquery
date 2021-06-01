@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        function appendBody(){
+            var txt1 = "<p>TEXT1</p>";
+            var txt2 = $('<p></p>').text('TEXT2');
+            var txt3 = document.createElement("p");
+            txt3.innerHTML = "TEXT3";
+            $('body').append(txt1,txt2,txt3);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="appendBody();">Append body</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+                $("p").remove(".test1,.test2");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="mybtn">Remove</button>
+    <p>This is content 1</p>
+    <p class="test1">This is content 2</p>
+    <p>This is content 3</p>
+    <p class="test2">This is content 4</p>
+    <p>This is content 5</p>
+    <h1>Welcome</h1>
+</body>
+</html>

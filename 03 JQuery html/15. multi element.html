@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function afterIMG() {
+            var txt1 = "<b>I </b>";           // Create element with HTML
+            var txt2 = $("<i></i>").text("love ");  // Create with jQuery
+            var txt3 = document.createElement("b");   // Create with DOM
+            txt3.innerHTML = "jQuery!";
+            $("img").after(txt1, txt2, txt3);    // Insert new elements after img
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="afterIMG()">After</button>
+    </div>
+    <img src="http://placekitten.com/300/200" alt="image">
+</body>
+</html>
